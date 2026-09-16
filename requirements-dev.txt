@@ -1,1 +1,42 @@
+# ═══════════════════════════════════════════════════════════
+# LUNA GAME STORE — requirements-dev.txt
+# Development dependencies (NOT bundled into the .exe)
+# Install with: pip install -r requirements.txt -r requirements-dev.txt
+# ═══════════════════════════════════════════════════════════
 
+# ─── Testing ──────────────────────────────────────────────
+# Unit tests, mocking, fixtures
+pytest==8.3.2
+
+# ─── Coverage ─────────────────────────────────────────────
+# Shows which lines of code are actually tested
+coverage==7.6.1
+pytest-cov==5.0.0
+
+# ─── Code Formatting ──────────────────────────────────────
+# Automatically formats Python code (line length, spacing, quotes)
+black==24.8.0
+
+# ─── Linting ──────────────────────────────────────────────
+# Fast linter — catches bugs, unused imports, style issues
+ruff==0.6.2
+
+# ─── Type Checking ────────────────────────────────────────
+# Static type checker — catches type errors before runtime
+mypy==1.11.2
+
+# ─── Pre-commit Hooks ─────────────────────────────────────
+# Runs checks automatically before every git commit
+pre-commit==3.8.0
+
+# ─── Build Tools ──────────────────────────────────────────
+# Bundles the Python app into a Windows .exe
+pyinstaller==6.10.0
+
+# ─── Dependency Management ────────────────────────────────
+# Keeps requirements.txt up to date with installed packages
+pip-tools==7.4.1
+
+# ─── Environment Loading ──────────────────────────────────
+# Load .env files for local dev secrets
+python-dotenv==1.0.1
