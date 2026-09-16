@@ -1,1 +1,194 @@
+# ═══════════════════════════════════════════════════════════
+# LUNA GAME STORE — pyproject.toml
+# Project metadata · Dependencies · Tool configuration
+# ═══════════════════════════════════════════════════════════
 
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# ─── Project metadata ─────────────────────────────────────
+[project]
+name = "luna-game-store"
+version = "0.1.0"
+description = "A modern, galaxy-themed PC game launcher powered by FitGirl Repacks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [
+    { name = "H3X-dev-xbox", url = "https://github.com/H3X-dev-xbox" }
+]
+keywords = ["game-launcher", "gaming", "fitgirl", "customtkinter", "desktop-app"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: End Users/Desktop",
+    "License :: Other/Proprietary License",
+    "Natural Language :: English",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+    "Topic :: Desktop Environment",
+]
+
+# Core dependencies (what the app needs to run)
+dependencies = [
+    "customtkinter>=5.2.2",
+    "requests>=2.32.3",
+    "pillow>=10.4.0",
+    "tqdm>=4.66.5",
+    "py7zr>=0.21.0",
+]
+
+# ─── Optional dependency groups ───────────────────────────
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.2",
+    "pytest-cov>=5.0.0",
+    "black>=24.8.0",
+    "ruff>=0.6.0",
+    "mypy>=1.11.0",
+]
+build = [
+    "pyinstaller>=6.10.0",
+]
+
+# ─── URLs ─────────────────────────────────────────────────
+[project.urls]
+Homepage = "https://h3x-dev-xbox.github.io/luna-website/"
+Repository = "https://github.com/H3X-dev-xbox/luna-game-store"
+Issues = "https://github.com/H3X-dev-xbox/luna-game-store/issues"
+Releases = "https://github.com/H3X-dev-xbox/luna-game-store/releases"
+Website = "https://h3x-dev-xbox.github.io/luna-website/"
+
+# ─── Entry point (creates a `luna` command) ───────────────
+[project.scripts]
+luna = "src.main:main"
+
+# ═══════════════════════════════════════════════════════════
+# TOOL CONFIGURATION
+# ═══════════════════════════════════════════════════════════
+
+# ─── Setuptools — package discovery ───────────────────────
+[tool.setuptools]
+packages = ["src", "src.ui", "src.ui.widgets", "src.core", "src.utils"]
+
+[tool.setuptools.package-data]
+"src.assets" = ["*.png", "*.ico", "fonts/*.ttf", "icons/*.png"]
+
+# ─── Black — code formatter ───────────────────────────────
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | venv
+  | build
+  | dist
+  | __pycache__
+)/
+'''
+
+# ─── Ruff — fast linter ───────────────────────────────────
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src"]
+
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+    "__pycache__",
+    "*.egg-info",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "C4",   # flake8-comprehensions
+    "UP",   # pyupgrade
+    "N",    # pep8-naming
+    "SIM",  # flake8-simplify
+]
+ignore = [
+    "E501",  # line too long (Black handles this)
+    "N802",  # function name should be lowercase (TKinter uses CamelCase)
+    "N803",  # argument name should be lowercase
+    "N815",  # mixedCase variable in class scope
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]     # unused imports in __init__
+"tests/*" = ["S101"]          # allow asserts in tests
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+# ─── MyPy — static type checker ───────────────────────────
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+exclude = [
+    "build/",
+    "dist/",
+    "venv/",
+    ".venv/",
+]
+
+# ─── Pytest — test runner ─────────────────────────────────
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--strict-markers",
+    "--tb=short",
+]
+markers = [
+    "slow: marks tests as slow",
+    "integration: marks tests as integration tests",
+    "network: marks tests that require network access",
+]
+
+# ─── Coverage — code coverage ─────────────────────────────
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/tests/*",
+    "*/__init__.py",
+    "*/main.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "@abstractmethod",
+]
