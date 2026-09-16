@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# PyInstaller build artifacts
+build/*
+dist/
+*.spec.bak
+
+# Keep the spec file, ignore other build junk
+!build/luna.spec
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets (never commit tokens)
+.env
+secrets.json
+
+# User installs (local only)
+installed_games/
+downloads/
