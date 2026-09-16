@@ -1,1 +1,42 @@
+# ═══════════════════════════════════════════════════════════
+# LUNA GAME STORE — Windows Version Information
+# Embedded into LunaGameStore.exe by PyInstaller
+# Format: PyInstaller VSVersionInfo
+# ═══════════════════════════════════════════════════════════
 
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(0, 1, 0, 0),
+    prodvers=(0, 1, 0, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo(
+      [
+        StringTable(
+          u'040904B0',
+          [
+            StringStruct(u'CompanyName',      u'H3X-dev-xbox'),
+            StringStruct(u'FileDescription',  u'Luna Game Store - PC Game Launcher'),
+            StringStruct(u'FileVersion',      u'0.1.0.0'),
+            StringStruct(u'InternalName',     u'LunaGameStore'),
+            StringStruct(u'LegalCopyright',   u'© 2026 H3X-dev-xbox. All Rights Reserved.'),
+            StringStruct(u'LegalTrademarks',  u'Luna Game Store'),
+            StringStruct(u'OriginalFilename', u'LunaGameStore.exe'),
+            StringStruct(u'PrivateBuild',     u''),
+            StringStruct(u'ProductName',      u'Luna Game Store'),
+            StringStruct(u'ProductVersion',   u'0.1.0.0'),
+            StringStruct(u'Comments',         u'A modern, galaxy-themed PC game launcher powered by FitGirl Repacks.'),
+            StringStruct(u'SpecialBuild',     u''),
+          ]
+        )
+      ]
+    ),
+    VarFileInfo([VarStruct(u'Translation', [1033, 1200])])
+  ]
+)
