@@ -6,6 +6,7 @@
 
 import os
 import sys
+import json
 from pathlib import Path
 
 # ─── Paths ────────────────────────────────────────────────
@@ -15,9 +16,10 @@ ROOT_DIR = SPEC_DIR.parent          # repo root (one level up from build/)
 SRC_DIR = ROOT_DIR / "src"
 ASSETS_DIR = SRC_DIR / "assets"
 VERSION_FILE = ROOT_DIR / "version.json"
+VERSION_INFO = SPEC_DIR / "version_info.txt"
+ICON_FILE = ASSETS_DIR / "logo.ico"
 
 # ─── Read version info ────────────────────────────────────
-import json
 try:
     with open(VERSION_FILE, "r", encoding="utf-8") as f:
         VERSION = json.load(f).get("version", "0.0.0")
@@ -150,7 +152,10 @@ exe = EXE(
     entitlements_file=None,
 
     # ── Icon ──
-    icon=str(ASSETS_DIR / "logo.ico"),
+    icon=str(ICON_FILE) if ICON_FILE.exists() else None,
+
+    # ── Windows version metadata ──
+    version=str(VERSION_INFO) if VERSION_INFO.exists() else None,
 )
 
 # ═══════════════════════════════════════════════════════════
@@ -171,7 +176,8 @@ exe = EXE(
 #     strip=False,
 #     upx=True,
 #     console=False,
-#     icon=str(ASSETS_DIR / "logo.ico"),
+#     icon=str(ICON_FILE),
+#     version=str(VERSION_INFO),
 # )
 #
 # coll = COLLECT(
