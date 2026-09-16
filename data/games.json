@@ -1,1 +1,396 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-01-01T00:00:00Z",
+    "total_games": 6,
+    "source": "FitGirl Repacks",
+    "source_url": "https://fitgirl-repacks.site/",
+    "hosting": "Archive.org",
+    "hosting_url": "https://archive.org/",
+    "maintainer": "H3X-dev-xbox",
+    "schema_version": "1.0",
+    "min_launcher_version": "0.1.0"
+  },
+  "categories": [
+    { "id": "action",     "name": "Action",     "icon": "⚔️" },
+    { "id": "adventure",  "name": "Adventure",  "icon": "🗺️" },
+    { "id": "rpg",        "name": "RPG",        "icon": "🐉" },
+    { "id": "strategy",   "name": "Strategy",   "icon": "♟️" },
+    { "id": "shooter",    "name": "Shooter",    "icon": "🎯" },
+    { "id": "indie",      "name": "Indie",      "icon": "💎" },
+    { "id": "puzzle",     "name": "Puzzle",     "icon": "🧩" },
+    { "id": "platformer", "name": "Platformer", "icon": "🏃" }
+  ],
+  "games": [
+    {
+      "id": "example-game-001",
+      "title": "Example Game One",
+      "slug": "example-game-one",
+      "description": "A placeholder entry demonstrating the Luna catalog format. Replace this with real games from FitGirl Repacks.",
+      "developer": "Example Studio",
+      "publisher": "Example Publisher",
+      "release_year": 2024,
+      "genres": ["Action", "Adventure"],
+      "category": "action",
+      "tags": ["singleplayer", "open-world", "story-rich"],
+      "platforms": ["Windows"],
 
+      "cover_image":    "https://archive.org/download/luna-game-001/cover.jpg",
+      "banner_image":   "https://archive.org/download/luna-game-001/banner.jpg",
+      "screenshots": [
+        "https://archive.org/download/luna-game-001/screenshot-01.jpg",
+        "https://archive.org/download/luna-game-001/screenshot-02.jpg"
+      ],
+
+      "size_gb": 35.4,
+      "size_bytes": 38012753920,
+      "version": "1.0.0",
+      "checksum_sha256": "",
+
+      "fitgirl_url": "https://fitgirl-repacks.site/",
+      "archive_item": "luna-game-001",
+      "download_url": "https://archive.org/download/luna-game-001/GameOne.zip",
+      "mirror_urls": [],
+
+      "install": {
+        "archive_type": "zip",
+        "install_folder": "GameOne",
+        "executable": "GameOne.exe",
+        "executable_args": [],
+        "working_directory": "",
+        "install_size_gb": 42.1,
+        "requires_admin": false,
+        "post_install_notes": ""
+      },
+
+      "updates": {
+        "auto_check": true,
+        "latest_version": "1.0.0",
+        "update_url": "",
+        "last_checked": "2026-01-01T00:00:00Z"
+      },
+
+      "flags": {
+        "featured": true,
+        "verified": false,
+        "new_release": true,
+        "coming_soon": false,
+        "beta_only": false
+      },
+
+      "meta": {
+        "added_at": "2026-01-01T00:00:00Z",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "downloads": 0,
+        "rating": null
+      }
+    },
+
+    {
+      "id": "example-game-002",
+      "title": "Example Game Two",
+      "slug": "example-game-two",
+      "description": "Another placeholder entry. Shows how a second game appears in the store grid.",
+      "developer": "Example Studio",
+      "publisher": "Example Publisher",
+      "release_year": 2023,
+      "genres": ["RPG", "Indie"],
+      "category": "rpg",
+      "tags": ["singleplayer", "pixel-art", "roguelike"],
+      "platforms": ["Windows"],
+
+      "cover_image":    "https://archive.org/download/luna-game-002/cover.jpg",
+      "banner_image":   "https://archive.org/download/luna-game-002/banner.jpg",
+      "screenshots": [
+        "https://archive.org/download/luna-game-002/screenshot-01.jpg"
+      ],
+
+      "size_gb": 12.8,
+      "size_bytes": 13743895347,
+      "version": "1.2.0",
+      "checksum_sha256": "",
+
+      "fitgirl_url": "https://fitgirl-repacks.site/",
+      "archive_item": "luna-game-002",
+      "download_url": "https://archive.org/download/luna-game-002/GameTwo.zip",
+      "mirror_urls": [],
+
+      "install": {
+        "archive_type": "zip",
+        "install_folder": "GameTwo",
+        "executable": "GameTwo.exe",
+        "executable_args": [],
+        "working_directory": "",
+        "install_size_gb": 15.3,
+        "requires_admin": false,
+        "post_install_notes": ""
+      },
+
+      "updates": {
+        "auto_check": true,
+        "latest_version": "1.2.0",
+        "update_url": "",
+        "last_checked": "2026-01-01T00:00:00Z"
+      },
+
+      "flags": {
+        "featured": false,
+        "verified": false,
+        "new_release": false,
+        "coming_soon": false,
+        "beta_only": false
+      },
+
+      "meta": {
+        "added_at": "2026-01-01T00:00:00Z",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "downloads": 0,
+        "rating": null
+      }
+    },
+
+    {
+      "id": "example-game-003",
+      "title": "Example Game Three",
+      "slug": "example-game-three",
+      "description": "Third placeholder game. Used to test the grid layout with multiple entries.",
+      "developer": "Demo Devs",
+      "publisher": "Demo Publishing",
+      "release_year": 2025,
+      "genres": ["Strategy"],
+      "category": "strategy",
+      "tags": ["multiplayer", "co-op", "competitive"],
+      "platforms": ["Windows"],
+
+      "cover_image":    "https://archive.org/download/luna-game-003/cover.jpg",
+      "banner_image":   "https://archive.org/download/luna-game-003/banner.jpg",
+      "screenshots": [],
+
+      "size_gb": 8.2,
+      "size_bytes": 8804682956,
+      "version": "2.0.1",
+      "checksum_sha256": "",
+
+      "fitgirl_url": "https://fitgirl-repacks.site/",
+      "archive_item": "luna-game-003",
+      "download_url": "https://archive.org/download/luna-game-003/GameThree.zip",
+      "mirror_urls": [],
+
+      "install": {
+        "archive_type": "zip",
+        "install_folder": "GameThree",
+        "executable": "GameThree.exe",
+        "executable_args": [],
+        "working_directory": "",
+        "install_size_gb": 9.8,
+        "requires_admin": false,
+        "post_install_notes": ""
+      },
+
+      "updates": {
+        "auto_check": true,
+        "latest_version": "2.0.1",
+        "update_url": "",
+        "last_checked": "2026-01-01T00:00:00Z"
+      },
+
+      "flags": {
+        "featured": false,
+        "verified": false,
+        "new_release": false,
+        "coming_soon": false,
+        "beta_only": false
+      },
+
+      "meta": {
+        "added_at": "2026-01-01T00:00:00Z",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "downloads": 0,
+        "rating": null
+      }
+    },
+
+    {
+      "id": "example-game-004",
+      "title": "Example Game Four",
+      "slug": "example-game-four",
+      "description": "Fourth placeholder. Demonstrates a smaller game entry.",
+      "developer": "Indie Corner",
+      "publisher": "Indie Corner",
+      "release_year": 2024,
+      "genres": ["Puzzle", "Casual"],
+      "category": "puzzle",
+      "tags": ["singleplayer", "relaxing", "short"],
+      "platforms": ["Windows"],
+
+      "cover_image":    "https://archive.org/download/luna-game-004/cover.jpg",
+      "banner_image":   "https://archive.org/download/luna-game-004/banner.jpg",
+      "screenshots": [],
+
+      "size_gb": 2.1,
+      "size_bytes": 2254857830,
+      "version": "1.0.0",
+      "checksum_sha256": "",
+
+      "fitgirl_url": "https://fitgirl-repacks.site/",
+      "archive_item": "luna-game-004",
+      "download_url": "https://archive.org/download/luna-game-004/GameFour.zip",
+      "mirror_urls": [],
+
+      "install": {
+        "archive_type": "zip",
+        "install_folder": "GameFour",
+        "executable": "GameFour.exe",
+        "executable_args": [],
+        "working_directory": "",
+        "install_size_gb": 2.5,
+        "requires_admin": false,
+        "post_install_notes": ""
+      },
+
+      "updates": {
+        "auto_check": true,
+        "latest_version": "1.0.0",
+        "update_url": "",
+        "last_checked": "2026-01-01T00:00:00Z"
+      },
+
+      "flags": {
+        "featured": false,
+        "verified": false,
+        "new_release": false,
+        "coming_soon": false,
+        "beta_only": false
+      },
+
+      "meta": {
+        "added_at": "2026-01-01T00:00:00Z",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "downloads": 0,
+        "rating": null
+      }
+    },
+
+    {
+      "id": "example-game-005",
+      "title": "Example Game Five",
+      "slug": "example-game-five",
+      "description": "Fifth placeholder entry. Big AAA-style example.",
+      "developer": "Big Studio",
+      "publisher": "Mega Publisher",
+      "release_year": 2025,
+      "genres": ["Action", "Shooter"],
+      "category": "shooter",
+      "tags": ["singleplayer", "multiplayer", "graphics-heavy"],
+      "platforms": ["Windows"],
+
+      "cover_image":    "https://archive.org/download/luna-game-005/cover.jpg",
+      "banner_image":   "https://archive.org/download/luna-game-005/banner.jpg",
+      "screenshots": [],
+
+      "size_gb": 87.5,
+      "size_bytes": 93952409600,
+      "version": "1.5.0",
+      "checksum_sha256": "",
+
+      "fitgirl_url": "https://fitgirl-repacks.site/",
+      "archive_item": "luna-game-005",
+      "download_url": "https://archive.org/download/luna-game-005/GameFive.zip",
+      "mirror_urls": [],
+
+      "install": {
+        "archive_type": "zip",
+        "install_folder": "GameFive",
+        "executable": "GameFive.exe",
+        "executable_args": [],
+        "working_directory": "",
+        "install_size_gb": 105.2,
+        "requires_admin": false,
+        "post_install_notes": "Requires 8GB+ RAM. Windows 10 1909 or newer."
+      },
+
+      "updates": {
+        "auto_check": true,
+        "latest_version": "1.5.0",
+        "update_url": "",
+        "last_checked": "2026-01-01T00:00:00Z"
+      },
+
+      "flags": {
+        "featured": true,
+        "verified": false,
+        "new_release": true,
+        "coming_soon": false,
+        "beta_only": false
+      },
+
+      "meta": {
+        "added_at": "2026-01-01T00:00:00Z",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "downloads": 0,
+        "rating": null
+      }
+    },
+
+    {
+      "id": "example-game-006",
+      "title": "Example Game Six",
+      "slug": "example-game-six",
+      "description": "Sixth placeholder entry. Small indie example.",
+      "developer": "Solo Dev",
+      "publisher": "Self-Published",
+      "release_year": 2023,
+      "genres": ["Platformer"],
+      "category": "platformer",
+      "tags": ["singleplayer", "retro", "challenging"],
+      "platforms": ["Windows"],
+
+      "cover_image":    "https://archive.org/download/luna-game-006/cover.jpg",
+      "banner_image":   "https://archive.org/download/luna-game-006/banner.jpg",
+      "screenshots": [],
+
+      "size_gb": 4.7,
+      "size_bytes": 5046586572,
+      "version": "1.0.3",
+      "checksum_sha256": "",
+
+      "fitgirl_url": "https://fitgirl-repacks.site/",
+      "archive_item": "luna-game-006",
+      "download_url": "https://archive.org/download/luna-game-006/GameSix.zip",
+      "mirror_urls": [],
+
+      "install": {
+        "archive_type": "zip",
+        "install_folder": "GameSix",
+        "executable": "GameSix.exe",
+        "executable_args": [],
+        "working_directory": "",
+        "install_size_gb": 5.4,
+        "requires_admin": false,
+        "post_install_notes": ""
+      },
+
+      "updates": {
+        "auto_check": true,
+        "latest_version": "1.0.3",
+        "update_url": "",
+        "last_checked": "2026-01-01T00:00:00Z"
+      },
+
+      "flags": {
+        "featured": false,
+        "verified": false,
+        "new_release": false,
+        "coming_soon": false,
+        "beta_only": false
+      },
+
+      "meta": {
+        "added_at": "2026-01-01T00:00:00Z",
+        "updated_at": "2026-01-01T00:00:00Z",
+        "downloads": 0,
+        "rating": null
+      }
+    }
+  ]
+}
