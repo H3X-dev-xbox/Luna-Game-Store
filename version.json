@@ -1,1 +1,39 @@
+{
+  "name": "Luna Game Store",
+  "short_name": "Luna",
+  "version": "0.1.0",
+  "stage": "pre-alpha",
+  "channel": "dev",
+  "release_date": "2026-01-01",
+  "build_number": 1,
 
+  "author": "H3X-dev-xbox",
+  "license": "Proprietary",
+  "copyright": "© 2026 H3X-dev-xbox. All Rights Reserved.",
+
+  "description": "A modern, galaxy-themed PC game launcher powered by FitGirl Repacks.",
+
+  "urls": {
+    "github": "https://github.com/H3X-dev-xbox/luna-game-store",
+    "website": "https://h3x-dev-xbox.github.io/luna-website/",
+    "releases": "https://github.com/H3X-dev-xbox/luna-game-store/releases",
+    "issues": "https://github.com/H3X-dev-xbox/luna-game-store/issues",
+    "update_check": "https://api.github.com/repos/H3X-dev-xbox/luna-game-store/releases/latest",
+    "catalog": "https://raw.githubusercontent.com/H3X-dev-xbox/luna-game-store/main/data/games.json"
+  },
+
+  "features": {
+    "auto_update": true,
+    "telemetry": false,
+    "cloud_saves": false,
+    "multi_download": true,
+    "beta_mode": true
+  },
+
+  "requirements": {
+    "python": ">=3.10",
+    "os": ["Windows 10", "Windows 11"],
+    "ram_mb": 512,
+    "disk_mb": 200
+  }
+}
