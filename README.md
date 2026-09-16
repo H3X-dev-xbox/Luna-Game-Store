@@ -97,6 +97,35 @@ We're building something **cleaner**, **faster**, and **freer** — a store that
 
 <div align="center">
 
+## 🎮 Game Catalog & Credits
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=2500&pause=1000&color=7B5CFF&center=true&vCenter=true&width=650&lines=Powered+by+FitGirl+Repacks.;All+credit+goes+to+the+original+repacker." alt="Catalog Credits" />
+
+</div>
+
+### 🙌 All Games Sourced From **FitGirl Repacks**
+
+Every game available in the Luna Game Store catalog is sourced directly from **[FitGirl Repacks](https://fitgirl-repacks.site/)** — one of the most respected and trusted repackers in the PC gaming community.
+
+**Full credit belongs to FitGirl and her team.** Luna Game Store does not repack, crack, or modify any game files. We simply provide a cleaner, faster, and more modern way to **discover and install** the repacks that FitGirl has already created and shared with the world.
+
+> 🛰️ **FitGirl Repacks:** [https://fitgirl-repacks.site/](https://fitgirl-repacks.site/)
+
+| | |
+|---|---|
+| 🧑‍💻 **Repacker** | FitGirl |
+| 🌐 **Official Site** | [https://fitgirl-repacks.site/](https://fitgirl-repacks.site/) |
+| 💚 **Our Role** | Launcher, catalog, and download manager only |
+| 🚫 **What We Don't Do** | We do not host, crack, or repack any games ourselves |
+
+### 💖 Support FitGirl
+
+If you enjoy any of the games in Luna, please support FitGirl directly. Visit the [official site](https://fitgirl-repacks.site/), use their mirrors, and consider donating if you're able. **Without FitGirl, Luna wouldn't exist.**
+
+---
+
+<div align="center">
+
 ## 🛠️ Development Status
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="500" />
