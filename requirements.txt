@@ -1,1 +1,25 @@
+# ═══════════════════════════════════════════════════════════
+# LUNA GAME STORE — requirements.txt
+# Production dependencies (what the app needs to run)
+# Install with: pip install -r requirements.txt
+# ═══════════════════════════════════════════════════════════
 
+# ─── UI Framework ─────────────────────────────────────────
+# Modern dark-themed Tkinter widgets — the galaxy look
+customtkinter==5.2.2
+
+# ─── HTTP / Networking ────────────────────────────────────
+# Fetch catalog, check for updates, download game files
+requests==2.32.3
+
+# ─── Image Handling ───────────────────────────────────────
+# Load logos, game cover art, icons
+pillow==10.4.0
+
+# ─── Progress Bars ────────────────────────────────────────
+# Download progress in the terminal (fallback UI)
+tqdm==4.66.5
+
+# ─── Archive Extraction ───────────────────────────────────
+# Extract .7z, .zip, .rar game archives
+py7zr==0.21.0
